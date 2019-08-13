@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name=viewport content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="./css/default.css"/>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.8/jstree.min.js"></script>
+<script src="./js/main.js"></script>
+<title>example</title>
+</head>
+
+<body>
+<div id="tree">
+  <ul class="root">
+    <li>ROOT
+      <ul>
+        <li class="element process">aaa</li>
+        <li class="element process">bbb</li>
+        <li class="decision">iii
+          <ul>
+            <li class="element process">b-AAA</li>
+            <li class="element process">b-BBB</li>
+          </ul>
+        </li>
+        <li class="decision">eee
+          <ul>
+            <li class="element process">e-AAA</li>
+            <li class="element process">e-BBB</li>
+            <li class="decision">I2
+              <ul>
+                <li class="element process">FFF</li>
+              </ul>
+            </li>
+            <li class="element process">e-CCC</li>
+          </ul>
+        </li>
+        <li class="element process">ccc</li>
+        <li class="element process">ddd</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	margin-left: 2em;
+	list-style-type: none;
+	background-color: #f8f8f8;
+	user-select: none;
+}
+ul.root {
+	margin-left: 0px;
+}
+li {
+	margin-top: .2em;
+	padding: .5em 0 .5em .5em;
+	user-select: none;
+}
+li.element {
+	border: solid 1px black;
+	border-radius: .3em;
+	background-color: #d0d0d0;
+}
+li.decision {
+	border-width: 1px 0 0 1px;
+	border-color: gray;
+	border-style: dashed;
+}
+
+li.ui-selecting { background: #FECA40; }
+li.ui-selected { background: #F39814; color: white; }
