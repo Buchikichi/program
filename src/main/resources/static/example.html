@@ -12,32 +12,38 @@
 </head>
 
 <body>
+<div>
+  <button id="processButton">Process</button>
+  <button id="ifButton">If</button>
+  <button id="removeButton">Remove</button>
+  <button id="executeButton">Execute</button>
+</div>
 <div id="tree">
   <ul>
-    <li class="root">
+    <li class="root control">
       <ul>
-        <li class="element process">aaa</li>
-        <li class="element process">bbb</li>
-        <li class="decision">iii
+        <li class="process">count = 0</li>
+        <li class="process">steps = 0</li>
+        <li class="control decision">for (let ix = 0; ix < 10; ix++)
           <ul>
-            <li class="element process">b-AAA</li>
-            <li class="element process">b-BBB</li>
+            <li class="process">count++</li>
+            <li class="process">steps += 2</li>
           </ul>
         </li>
-        <li class="decision">eee
+        <li class="control decision">if (count < 100)
           <ul>
-            <li class="element process">e-AAA</li>
-            <li class="element process">e-BBB</li>
-            <li class="decision">I2
+            <li class="process">count--</li>
+            <li class="process">steps--</li>
+            <li class="control decision">if (0 < steps)
               <ul>
-                <li class="element process">FFF</li>
+                <li class="process">steps /= 2</li>
               </ul>
             </li>
-            <li class="element process">e-CCC</li>
+            <li class="process">count *= 2</li>
           </ul>
         </li>
-        <li class="element process">ccc</li>
-        <li class="element process">ddd</li>
+        <li class="process">console.log('count:' + count)</li>
+        <li class="process">console.log('steps:' + steps)</li>
       </ul>
     </li>
   </ul>
